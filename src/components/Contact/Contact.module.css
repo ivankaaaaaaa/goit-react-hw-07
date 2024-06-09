@@ -1,0 +1,28 @@
+.contact {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+  }
+  
+  .contactName {
+    font-weight: bold;
+  }
+  
+  .contactNumber {
+    color: #666;
+  }
+  
+  .deleteButton {
+    background-color: #700914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c50518;
+  }
