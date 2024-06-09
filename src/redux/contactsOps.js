@@ -2,7 +2,7 @@ import { createAsyncThunk, createSelector } from "@reduxjs/toolkit";
 import axios from "axios";
 import { selectFilter } from "./selectors";
 
-axios.defaults.baseURL = "https://6659ad32de346625136d79ea.mockapi.io/";
+axios.defaults.baseURL = "https://6665b21cd122c2868e4171b6.mockapi.io/";
 
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
