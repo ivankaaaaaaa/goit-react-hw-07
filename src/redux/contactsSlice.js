@@ -3,7 +3,7 @@ import {
   addContact,
   deleteContact,
   fetchContacts,
-  filteredContacts,
+  filterStateContacts,
 } from "./contactsOps";
 import { selectContacts, selectFilter } from "./selectors";
 
@@ -56,5 +56,5 @@ export const contactsReducer = contactsSlice.reducer;
 
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
-  (contacts, filter) => filteredContacts(contacts, filter)
+  (contacts, filter) => filterStateContacts(contacts, filter)
 );

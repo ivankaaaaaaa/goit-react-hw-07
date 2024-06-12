@@ -46,8 +46,8 @@ const filterContacts = (contacts, filter) => {
   );
 };
 
-export const selectContact = (state) => state.contacts;
-export const filteredContacts = createSelector(
-  [selectContact, selectFilter],
+export const stateContactSelects = (state) => state.contacts;
+export const filterStateContacts = createSelector(
+  [stateContactSelects, selectFilter],
   (contacts, filter) => filterContacts(contacts, filter)
 );
